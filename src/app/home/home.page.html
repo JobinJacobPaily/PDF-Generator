@@ -1,20 +1,35 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <ion-navbar>
     <ion-title>
-      Blank
+      Ionic PDF
     </ion-title>
-  </ion-toolbar>
+  </ion-navbar>
 </ion-header>
+ 
+<ion-content padding>
+ 
+  <ion-item>
+    <ion-label stacked>From</ion-label>
+    <ion-input [(ngModel)]="letterObj.from"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>To</ion-label>
+    <ion-input [(ngModel)]="letterObj.to"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Text</ion-label>
+    <ion-textarea [(ngModel)]="letterObj.text" rows="10"></ion-textarea>
+  </ion-item>
+ 
+  <button ion-button full (click)="createPdf()">Create PDF</button>
+  <button ion-button full (click)="downloadPdf()" color="secondary" [disabled]="!pdfObj">Download PDF</button>
+  <ion-button (click)='downloadtest1()'>DownloadTes1</ion-button>
+  <ion-button  (click)='downloadtest2()'>DownloadTes2</ion-button>
+  <ion-button  (click)='downloadtest3()'>DownloadTes3</ion-button>
+  <ion-button  (click)='downloadDocDir()'>Downloaddocdir</ion-button>
+  <ion-button  expand='full' color='danger' (click)='socialshare()' >Share</ion-button>
+  <ion-button  expand='full' color='danger' (click)='whatsappshare()' >whatsappshare</ion-button>
+  <ion-button  expand='full' color='danger' (click)='whatshare2()' >whatshare2</ion-button>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>
