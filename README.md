@@ -13,7 +13,7 @@ npm install @ionic-native/file-opener
 npm install @ionic-native/file   
 npm install @ionic-native/pdf-generator   
 ````
-To Run The application on device
+To Run The application On Device
 ----------------------------
 
 `npm install `   
