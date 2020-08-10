@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { File } from '@ionic-native/file/ngx';
 import { FileOpener } from '@ionic-native/file-opener/ngx';
 import {SocialSharing} from '@ionic-native/social-sharing/ngx';
+import { PDFGenerator } from '@ionic-native/pdf-generator/ngx';
 
 @NgModule({
   declarations: [AppComponent],

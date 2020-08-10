@@ -8,8 +8,12 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'html-to-pdf',
     pathMatch: 'full'
+  },
+  {
+    path: 'html-to-pdf',
+    loadChildren: () => import('./html-to-pdf/html-to-pdf.module').then( m => m.HtmlToPdfPageModule)
   },
 ];
 
