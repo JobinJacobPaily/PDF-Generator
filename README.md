@@ -13,7 +13,7 @@ npm install @ionic-native/file-opener
 npm install @ionic-native/file   
 npm install pdfmake  
 ````
-To Run The application on device
+To Run The Application On Device
 ----------------------------
 
 `npm install `   
